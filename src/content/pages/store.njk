@@ -144,7 +144,9 @@ description: Get exclusive merch, membership, materials, and more!
             </button>
             <!--Should be changed to go to Stripe? or something else that indicates "go pay"-->
             <button class="btn btn-primary" type="submit" onclick="fireGAEvent('PPForm Submitted')">
-              Submit </button> </div>
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
@@ -163,11 +165,14 @@ description: Get exclusive merch, membership, materials, and more!
       <div class="modal-content">
         <div class="modal-header">
           <div>
-            <h4 class="modal-title" id="ppformModalLabel">Thank you for your support!</h4>
+            <h4 class="modal-title" id="successModalLabel">Thank you for your support!</h4>
           </div>
         </div>
         <div class="modal-body">
-          <p>Your purchase will help fund our organization and events; keep an eye on your email for confirmation of your purchase! :3</p>
+          <p>
+            Your purchase will help fund our organization and events; keep an eye on your email for
+            confirmation of your purchase! :3
+          </p>
         </div>
         <div class="modal-footer">
           <button
@@ -1058,7 +1063,7 @@ description: Get exclusive merch, membership, materials, and more!
 
       localStorage.removeItem('userOrderId');
 
-      // Display a success message 
+      // Display a success message
       // alert('Success! Thank you for your purchase. We\'ll review your order and coordinate with you soon. If you have any questions, please reach out to us via Discord :3');
 
       successModal = new bootstrap.Modal(document.querySelector('#success-modal'));
